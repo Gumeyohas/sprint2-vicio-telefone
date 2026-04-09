@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneCheck — Análise de Dependência Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+
+  <main class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-badge">IA · Classificação Binária · Dependência Digital</div>
+      <h1 class="header-title">
+        <span class="icon-phone">📱</span>
+        Phone<span class="accent">Check</span>
+      </h1>
+      <p class="header-sub">Insira seus dados de uso e descubra se você apresenta sinais de dependência digital.</p>
+    </header>
+
+    <!-- FORM CARD -->
+    <div class="card form-card">
+      <div class="card-label">Dados de Entrada</div>
+
+      <div class="form-grid">
+
+        <div class="field-group">
+          <label class="field-label">Idade</label>
+          <input class="field-input" type="number" id="age" value="22" min="10" max="80">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Gênero</label>
+          <select class="field-input" id="gender">
+            <option value="0">Feminino</option>
+            <option value="1" selected>Masculino</option>
+            <option value="2">Outro</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Horas de tela / dia <span class="field-unit">h</span></label>
+          <input class="field-input" type="number" id="daily_screen_time_hours" step="0.1" value="6.0" min="0" max="24">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Redes sociais / dia <span class="field-unit">h</span></label>
+          <input class="field-input" type="number" id="social_media_hours" step="0.1" value="2.0" min="0" max="24">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Jogos / dia <span class="field-unit">h</span></label>
+          <input class="field-input" type="number" id="gaming_hours" step="0.1" value="1.0" min="0" max="24">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Trabalho / estudo <span class="field-unit">h</span></label>
+          <input class="field-input" type="number" id="work_study_hours" step="0.1" value="4.0" min="0" max="24">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Horas de sono <span class="field-unit">h</span></label>
+          <input class="field-input" type="number" id="sleep_hours" step="0.1" value="7.0" min="0" max="24">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Notificações / dia</label>
+          <input class="field-input" type="number" id="notifications_per_day" value="80" min="0">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Aberturas de app / dia</label>
+          <input class="field-input" type="number" id="app_opens_per_day" value="50" min="0">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Tela no fim de semana <span class="field-unit">h</span></label>
+          <input class="field-input" type="number" id="weekend_screen_time" step="0.1" value="8.0" min="0" max="24">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Nível de estresse</label>
+          <select class="field-input" id="stress_level">
+            <option value="0">Alto</option>
+            <option value="1" selected>Baixo</option>
+            <option value="2">Médio</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Impacto acadêmico / profissional</label>
+          <select class="field-input" id="academic_work_impact">
+            <option value="0">Não</option>
+            <option value="1" selected>Sim</option>
+          </select>
+        </div>
+
+        <!-- <div class="field-group field-group--full">
+          <label class="field-label">Nível de vício percebido</label>
+          <select class="field-input" id="addiction_level">
+            <option value="0">Leve</option>
+            <option value="1">Moderado</option>
+            <option value="2" selected>Nenhum</option>
+            <option value="3">Severo</option>
+          </select>
+        </div> -->
+
+      </div>
+
+      <button class="btn-analyze" id="btn-analyze">
+        <span class="btn-text">Analisar Perfil</span>
+        <span class="btn-icon">→</span>
+      </button>
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="card result-card" id="result-card">
+      <div class="card-label">Resultado da Análise</div>
+      <div class="result-content" id="result-content">
+        <!-- preenchido via JS -->
+      </div>
+    </div>
+
+    <footer class="footer">
+      Modelo SVM · Scikit-Learn · Treinado com 7.500 registros · ROC-AUC 0.974 · Accuracy 92.33% · F1-Score 0.947
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
