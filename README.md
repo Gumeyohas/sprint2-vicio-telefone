@@ -1,6 +1,6 @@
 # PhoneCheck — Classificação de Dependência Digital
 
-MVP da Sprint 2 — Engenharia de Software | PUC-Rio
+MVP do segundo sprint de Engenharia de Software | PUC-Rio
 
 ## Sobre o Projeto
 
