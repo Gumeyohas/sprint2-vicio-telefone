@@ -42,5 +42,6 @@ cd backend
   - ROC-AUC: 0.974
 - **Dataset**: 7.500 registros de uso de smartphone
 
-[![PhoneCheck](<img width="955" height="983" alt="Screenshot 2026-04-12 at 03 53 34" src="https://github.com/user-attachments/assets/7c286097-d134-4d95-baaa-23cce643c5b1" />)]([LINK_COMPARTILHAVEL_DO_GOOGLE_DRIVE](https://drive.google.com/file/d/1GuNO-ZHke9EjaeNV8QNlycSXty0GQk8R/view?usp=sharing))
+[![PhoneCheck](https://github.com/user-attachments/assets/7c286097-d134-4d95-baaa-23cce643c5b1)](https://drive.google.com/file/d/1GuNO-ZHke9EjaeNV8QNlycSXty0GQk8R/view?usp=sharing)
+
 
