@@ -42,6 +42,8 @@ cd backend
   - ROC-AUC: 0.974
 - **Dataset**: 7.500 registros de uso de smartphone
 
+## Vídeo de Apresentação do projeto MVP (Clique na foto abaixo)
+
 [![PhoneCheck](https://github.com/user-attachments/assets/7c286097-d134-4d95-baaa-23cce643c5b1)](https://drive.google.com/file/d/1GuNO-ZHke9EjaeNV8QNlycSXty0GQk8R/view?usp=sharing)
 
 
